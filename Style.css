@@ -77,33 +77,128 @@ footer {
     opacity: 0.3; /* subtle */
 }
 
-/* Circle */
-.shape.circle {
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
-    background-color: #66b2ff;
-    top: 10px;
-    right: 40px; /* moved slightly to the left */
+header {
+    position: relative;
+    padding: 20px 0;
+    text-align: center;
+    border-radius: 30px;
+    background-color: rgba(255, 255, 255, 0.5);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+    overflow: hidden;
 }
 
-/* Triangle */
+
+.shape {
+    position: absolute;
+    opacity: 0.3;
+}
+
+header {
+    position: relative;
+    padding: 20px 0;
+    text-align: center;
+    border-radius: 30px;
+    background-color: rgba(255, 255, 255, 0.5);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+    overflow: hidden;
+}
+
+
+.shape {
+    position: absolute;
+    opacity: 0.3; 
+}
+
+
+.shape.circle {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    background-color: #66b2ff;
+    top: 20px;
+    right: 20px; 
+}
+
+
 .shape.triangle {
     width: 0;
     height: 0;
-    border-left: 30px solid transparent;
-    border-right: 30px solid transparent;
-    border-bottom: 50px solid #99ccff;
-    top: 40px;
-    right: 90px; /* more spread out */
+    border-left: 40px solid transparent;
+    border-right: 40px solid transparent;
+    border-bottom: 60px solid purple;
+    top: 15px;
+    right: 290px; 
+    transform: rotate(-10deg);
 }
 
-/* Square */
+
 .shape.square {
-    width: 40px;
-    height: 40px;
-    background-color: #cce7ff;
-    top: 70px;
-    right: 60px;
+    width: 70px;
+    height: 70px;
+    background-color: green;
+    top: 50px;
+    right: 200px;
     transform: rotate(15deg);
+}
+
+
+.shape.diamond {
+    width: 40px;       
+    height: 80px;      
+    background-color: red;
+    clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+    top: 30px;
+    right: 140px;
+}
+
+.shape.star {
+    width: 60px;
+    height: 60px;
+    background-color: #ffcc00;
+    clip-path: polygon(
+        50% 0%,
+        61% 35%,
+        98% 35%,
+        68% 57%,
+        79% 91%,
+        50% 70%,
+        21% 91%,
+        32% 57%,
+        2% 35%,
+        39% 35%
+    );
+    top: 30px;
+    right: 470px;
+    transform: rotate(5deg);
+}
+
+.shape.hexagon {
+    width: 60px;
+    height: 60px;
+    background-color: cyan;
+    clip-path: polygon(
+        25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%
+    );
+    top: 70px;
+    right: 390px;
+}
+
+.shape.heart {
+    width: 60px;
+    height: 60px;
+    background-color: magenta;
+    clip-path: polygon(
+        50% 15%,
+        61% 0%,
+        75% 0%,
+        85% 10%,
+        85% 25%,
+        50% 60%,
+        15% 25%,
+        15% 10%,
+        25% 0%,
+        39% 0%
+    );
+    top: 90px;
+    right: 550px;
 }
