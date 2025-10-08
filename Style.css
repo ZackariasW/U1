@@ -1,0 +1,13 @@
+h1 {
+    color: silver;
+    text-align: center;
+    border: outset 15px black;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    padding: 10px;
+
+}
