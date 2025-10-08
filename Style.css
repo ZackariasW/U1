@@ -4,13 +4,26 @@ h1 {
     background-color: ivory;
     width: 150px;
     text-align: center;
-    padding: 20px;
+    padding: 60px 100px;
+    font-size: 2rem;
 
     /* Centering */
     position: absolute;
     top: 30%;
-    left: 50%;
+    left: 20%;
     transform: translate(-50%, -50%);
+}
+
+body {
+    background: linear-gradient(to bottom, #f0f8ff, #e6f2ff);
+    font-family: Arial, sans-serif;
+    margin: 0;
+}
+
+header {
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    padding: 20px 0;
+    background-color: #ffffffcc;
 }
 
 footer {
@@ -29,7 +42,8 @@ footer {
 
 .page-menu li a {
     display: block;
-    padding: 10px 20px;
+    font-size: 1.2rem;
+    padding: 20px 50px;
     background-color: ivory;
     color: black;
     text-decoration: none;
