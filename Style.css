@@ -1,11 +1,13 @@
 h1 {
-    border: 2px outset darkcyan;
+    border: 4px outset #66b2ff;
     border-radius: 25px;
-    background-color: ivory;
+    background-color: #cce7ff;
     width: 150px;
     text-align: center;
     padding: 60px 100px;
     font-size: 2rem;
+    color: #003366;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.6);
 
     /* Centering */
     position: absolute;
@@ -21,16 +23,22 @@ body {
 }
 
 header {
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
     padding: 20px 0;
-    background-color: #ffffffcc;
+    text-align: center;
+    border-radius: 30px;
+    background-color: rgba(255, 255, 255, 0.5);
 }
 
 footer {
     position: fixed;
     bottom: 0;
     right: 0;
-    padding: 10px;
+    padding: 10px 20px;
+    background-color: #ffffffcc;
+    border-top: 2px solid darkcyan;
+    border-radius: 15px 0 0 0;
+    font-weight: bold;
 
 }
 
@@ -44,15 +52,15 @@ footer {
     display: block;
     font-size: 1.2rem;
     padding: 20px 50px;
-    background-color: ivory;
-    color: black;
+    background-color: #cce7ff;
+    color: b#003366;
     text-decoration: none;
-    border: 2px outset darkcyan;
+    border: 4px outset #66b2ff;
     border-radius: 25px;
     transition: transform 0.2s, background-color 0.2s;
 }
 
 .page-menu li a:hover {
-    background-color: whitesmoke;
+    background-color: #99ccff;
     transform: scale(1.05);
 }
