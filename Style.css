@@ -66,6 +66,28 @@ footer {
     transform: scale(1.05) translateY(-5px);
 }
 
+.page-menu li a.home-page {
+    background-color:  #ffd966;
+    border: 2px outset #ffb700;
+    color: #333333;
+    font-weight: bold;
+    transform-origin: center;
+    transition: transform 0.2s, background-color 0.2s, scale 0.2s;
+}
+
+.page-menu li a.home-page:hover {
+    background-color: #ffeb99;
+    transform: scale(1.1) translateY(-5px);
+}
+
+
+
+
+
+
+
+/*SHAPES--------------------------------------------------------------*/
+
 .shape {
     position: absolute;
     opacity: 0.3;
@@ -74,7 +96,7 @@ footer {
 /* common shape style */
 .shape {
     position: absolute;
-    opacity: 0.3; /* subtle */
+    opacity: 0.3; 
 }
 
 header {
