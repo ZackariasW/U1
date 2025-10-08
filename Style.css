@@ -1,7 +1,9 @@
 h1 {
-    color: silver;
+    border: 2px outset darkcyan;
+    border-radius: 25px;
+    background-color: ivory;
+    width: 150px;
     text-align: center;
-    border: outset 15px black;
 }
 
 footer {
