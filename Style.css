@@ -80,9 +80,20 @@ footer {
     transform: scale(1.1) translateY(-5px);
 }
 
-main p {
+.introduction {
     position: absolute;
-    top: 50%;
+    top: 55%;
+    left: 20%;
+    transform: translate(-50%, -50%);
+    color: #003366;
+    font-size: 1.2rem;
+    max-width: 400px;
+    text-align: center;
+}
+
+.age {
+    position: absolute;
+    top: 65%;
     left: 20%;
     transform: translate(-50%, -50%);
     color: #003366;
@@ -103,9 +114,40 @@ main p {
     border: 3px solid #66b2ff;
 }
 
+.hobbies-section {
+    position: absolute;
+    top: 60%;
+    left: 20%;
+    transform: translate(-50%, -50%);
+    color: #003366;
+    font-size: 1.2rem;
+    max-width: 400px;
+    text-align: center;
+}
 
+.hobbies-bar {
+    position: absolute;
+    top: 40%;
+    left: 150%;         
+    transform: translateY(-50%);
+    width: 500px;
+    height: 700px;
+    border-radius: 25px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+    border: 3px solid #66b2ff;
+}
 
-
+.hobbies-game {
+    position: absolute;
+    top: 40%;
+    left: 280%;         
+    transform: translateY(-50%);
+    width: 500px;
+    height: 700px;
+    border-radius: 25px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+    border: 3px solid #66b2ff;
+}
 
 
 /*SHAPES--------------------------------------------------------------*/
