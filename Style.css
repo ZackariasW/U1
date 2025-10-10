@@ -80,17 +80,6 @@ footer {
     transform: scale(1.1) translateY(-5px);
 }
 
-.introduction {
-    position: absolute;
-    top: 55%;
-    left: 20%;
-    transform: translate(-50%, -50%);
-    color: #003366;
-    font-size: 1.2rem;
-    max-width: 400px;
-    text-align: center;
-}
-
 .age {
     position: absolute;
     top: 65%;
@@ -104,11 +93,11 @@ footer {
 
 .intro-img {
     position: absolute;
-    top: 64%;
+    top: 80%;
     left: 40%;         
     transform: translateY(-50%);
     width: 1000px;
-    height: 900px;
+    height: 1000px;
     border-radius: 25px;
     box-shadow: 0 8px 20px rgba(0,0,0,0.3);
     border: 3px solid #66b2ff;
@@ -150,17 +139,39 @@ footer {
 }
 
 
+header {
+    position: relative;
+    padding: 20px 0;
+    text-align: center;
+    border-radius: 30px;
+    background-color: rgba(255, 255, 255, 0.5);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+    overflow: hidden;
+}
+
+#introduction, #hobbies, #sports, #future, #interests {
+    position: relative;           
+    max-width: 600px;       
+    margin: 80px 0 50px 40px;     /* top, right, bottom, left spacing */
+    padding: 30px;
+    border-radius: 25px;
+    border: 4px outset #66b2ff;
+    background-color: rgba(255,255,255,0.7);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+    text-align: left;
+}
+
+#introduction {
+    margin-top: 300px;
+}
+
+
 /*SHAPES--------------------------------------------------------------*/
 
-.shape {
-    position: absolute;
-    opacity: 0.3;
-}
 
-/* common shape style */
 .shape {
     position: absolute;
-    opacity: 0.3; 
+    opacity: 0.15;
 }
 
 header {
@@ -171,28 +182,6 @@ header {
     background-color: rgba(255, 255, 255, 0.5);
     box-shadow: 0 8px 20px rgba(0,0,0,0.3);
     overflow: hidden;
-}
-
-
-.shape {
-    position: absolute;
-    opacity: 0.3;
-}
-
-header {
-    position: relative;
-    padding: 20px 0;
-    text-align: center;
-    border-radius: 30px;
-    background-color: rgba(255, 255, 255, 0.5);
-    box-shadow: 0 8px 20px rgba(0,0,0,0.3);
-    overflow: hidden;
-}
-
-
-.shape {
-    position: absolute;
-    opacity: 0.3; 
 }
 
 
