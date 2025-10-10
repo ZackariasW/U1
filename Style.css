@@ -152,7 +152,7 @@ header {
 #introduction, #hobbies, #sports, #future, #interests {
     position: relative;           
     max-width: 600px;       
-    margin: 80px 0 50px 40px;     /* top, right, bottom, left spacing */
+    margin: 80px 0 50px 40px;     
     padding: 30px;
     border-radius: 25px;
     border: 4px outset #66b2ff;
@@ -165,6 +165,40 @@ header {
     margin-top: 300px;
 }
 
+.section-nav ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    padding: 10px 0;
+    justify-content: left;
+    margin-left: 20px;
+}
+
+.section-nav li a {
+    text-decoration: none;
+    color: darkblue;
+    font-weight: bold;
+    padding: 8px 15px;
+    border: 2px solid #66b2ff;
+    border-radius: 15px;
+    background-color: #cce7ff;
+    transition: transform 0.2s, background-color 0.2s;
+}
+
+.section-nav li a:hover {
+    background-color: #99ccff;
+    transform: scale(1.05);
+}
+
+#sports:target,
+#hobbies:target,
+#future:target,
+#introduction:target {
+    background-color: rgba(102, 178, 255, 0.7); 
+    transition: background-color 0.5s;
+    border-radius: 20px;
+    padding: 10px;
+}
 
 /*SHAPES--------------------------------------------------------------*/
 
