@@ -94,7 +94,7 @@ footer {
 .intro-img {
     position: absolute;
     top: 80%;
-    left: 40%;         
+    left: 44%;         
     transform: translateY(-50%);
     width: 1000px;
     height: 1000px;
@@ -198,6 +198,15 @@ header {
     transition: background-color 0.5s;
     border-radius: 20px;
     padding: 10px;
+}
+
+@media (max-width: 700px) {
+    .intro-img {
+        width: 80%;
+        height: auto;
+        left: 50%;
+        transform: translateX(-50%) translateY(-50%);
+    }
 }
 
 /*SHAPES--------------------------------------------------------------*/
