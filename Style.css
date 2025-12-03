@@ -1,178 +1,79 @@
-h1 {
-    border: 4px outset #66b2ff;
-    border-radius: 25px;
-    background-color: #cce7ff;
-    padding: 60px 100px;
-    font-size: 2.2rem;
-    color: #003366;
-    box-shadow: 0 10px 25px rgba(0,0,0,0.25);
-    display: inline-block;
-    position: relative;
-    top: 120px;
-    left: 180px;
-}
-
-.titles {
-    border: 4px outset #66b2ff;
-    border-radius: 25px;
-    background-color: #cce7ff;
-    text-align: center;
-    padding: 60px 100px;
-    font-size: 2rem;
-    color: #003366;
-    box-shadow: 0 8px 20px rgba(0,0,0,0.25);
-    margin-bottom: 30px; 
-}
-
 body {
     background: linear-gradient(to bottom, #f0f8ff, #e6f2ff);
     font-family: Arial, sans-serif;
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1, .titles, h2 {
+    border: 4px outset #66b2ff;
+    border-radius: 25px;
+    background-color: #cce7ff;
+    color: #003366;
+    padding: 18px 30px;
+    margin: 20px 0;
+    display: inline-block;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+}
+
+h1 {
+    margin-left: 8%;
 }
 
 header {
     position: relative;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    text-align: center;
     padding: 20px 0;
-    text-align: center;
-    border-radius: 30px;
-    background-color: rgba(255, 255, 255, 0.4);
-    backdrop-filter: blur(8px);
-    overflow: hidden;
-}
-
-footer {
-    position: fixed;
-    bottom: 0;
-    right: 0;
-    padding: 10px 20px;
-    background-color: #ffffffcc;
-    border-top: 2px solid darkcyan;
-    border-radius: 15px 0 0 0;
-    font-weight: bold;
-
-}
-
-.page-menu {
-    list-style: none;
-    display: flex;
-    gap: 100px;
-}
-
-.page-menu li a {
-    display: block;
-    font-size: 1.2rem;
-    padding: 20px 50px;
-    background-color: rgba(255, 255, 255, 0.7);
-    color: #003366;
-    text-decoration: none;
-    border: 2px outset #66b2ff;
-    border-radius: 25px;
-    transition: transform 0.2s, background-color 0.2s;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
-}
-
-.page-menu li a:hover {
-    background-color: #99ccff;
-    transform: scale(1.05) translateY(-5px);
-}
-
-.page-menu li a.home-page {
-    background-color:  #ffd966;
-    border: 2px outset #ffb700;
-    color: #333333;
-    font-weight: bold;
-    transform-origin: center;
-    transition: transform 0.2s, background-color 0.2s, scale 0.2s;
-}
-
-.page-menu li a.home-page:hover {
-    background-color: #ffeb99;
-    transform: scale(1.1) translateY(-5px);
-}
-
-
-.intro-img {
-    width: 50%;
-    height: auto;
-    display: block;
-    margin-right: 50px;
-    margin-top: -1420px;
-    border-radius: 25px;
-    box-shadow: 0 8px 20px rgba(0,0,0,0.3);
-    border: 3px solid #66b2ff;
-    float: right;
-}
-
-.page-section {
-    position: absolute;
-    top: 60%;
-    left: 20%;
-    transform: translate(-50%, -50%);
-    color: #003366;
-    font-size: 1.2rem;
-    max-width: 400px;
-    text-align: center;
-}
-
-.image-2 {
-    position: absolute;
-    top: 40%;
-    left: 150%;         
-    transform: translateY(-50%);
-    width: 500px;
-    height: 700px;
-    border-radius: 25px;
-    box-shadow: 0 8px 20px rgba(0,0,0,0.3);
-    border: 3px solid #66b2ff;
-}
-
-.image-1 {
-    position: absolute;
-    top: 40%;
-    left: 280%;         
-    transform: translateY(-50%);
-    width: 500px;
-    height: 700px;
-    border-radius: 25px;
-    box-shadow: 0 8px 20px rgba(0,0,0,0.3);
-    border: 3px solid #66b2ff;
-}
-
-
-header {
-    position: relative;
-    padding: 20px 0;
-    text-align: center;
     border-radius: 30px;
     background-color: rgba(255, 255, 255, 0.5);
     box-shadow: 0 8px 20px rgba(0,0,0,0.3);
     overflow: hidden;
 }
 
-#introduction, #hobbies, #sports, #future, #interests {
-    position: relative;           
-    max-width: 600px;       
-    margin: 80px 0 50px 40px;     
-    padding: 30px;
-    border-radius: 25px;
-    border: 4px outset #66b2ff;
-    background-color: rgba(255,255,255,0.7);
-    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
-    text-align: left;
+.page-menu {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    padding: 0;
+    margin: 10px 0 0 0;
 }
 
-#introduction {
-    margin-top: 300px;
+.page-menu li a {
+    display: block;
+    font-size: 1rem;
+    padding: 10px 20px;
+    background-color: rgba(255,255,255,0.7);
+    color: #003366;
+    text-decoration: none;
+    border: 2px outset #66b2ff;
+    border-radius: 25px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    transition: transform 0.2s, background-color 0.2s;
+}
+
+.page-menu li a:hover {
+    background-color: #99ccff;
+    transform: scale(1.05) translateY(-3px);
+}
+
+.page-menu li a.home-page {
+    background-color: #ffd966;
+    border: 2px outset #ffb700;
+    color: #333333;
+    font-weight: bold;
 }
 
 .section-nav ul {
     list-style: none;
     display: flex;
-    gap: 30px;
-    padding: 10px 0;
-    justify-content: left;
-    margin-left: 20px;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+    padding: 10px;
+    margin-top: 20px;
 }
 
 .section-nav li a {
@@ -191,43 +92,80 @@ header {
     transform: scale(1.05);
 }
 
-#sports:target,
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-bottom: 40px;
+    position: relative;
+}
+
+#introduction {
+    width: 58%;
+    margin-left: 8%;
+    margin-top: 180px;
+    padding: 25px;
+    border: 4px outset #66b2ff;
+    border-radius: 25px;
+    background-color: rgba(255,255,255,0.7);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+#introduction p {
+    font-size: 1.05rem;
+}
+
+.intro-img {
+    position: absolute;
+    top: 160px;
+    right: -10%;
+    width: 34%;
+    max-width: 450px;
+    height: auto;
+    border-radius: 25px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+    border: 3px solid #66b2ff;
+}
+
+#hobbies,
+#sports,
+#future {
+    width: 70%;
+    margin-left: 8%;
+    margin-top: 40px;
+    padding: 25px;
+    border: 4px outset #66b2ff;
+    border-radius: 25px;
+    background-color: rgba(255,255,255,0.7);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+#hobbies p,
+#sports p,
+#future p {
+    font-size: 1.05rem;
+}
+
+#introduction:target,
 #hobbies:target,
-#future:target,
-#introduction:target {
-    background-color: rgba(102, 178, 255, 0.7); 
-    transition: background-color 0.5s;
-    border-radius: 20px;
+#sports:target,
+#future:target {
+    background-color: rgba(102,178,255,0.7);
+    transition: background-color 0.4s;
+}
+
+footer {
+    text-align: center;
     padding: 10px;
+    background-color: #ffffffcc;
+    border-top: 2px solid darkcyan;
+    font-weight: bold;
+    margin-top: 40px;
 }
-
-@media (max-width: 700px) {
-    .intro-img {
-        width: 80%;
-        height: auto;
-        left: 50%;
-        transform: translateX(-50%) translateY(-50%);
-    }
-}
-
-/*SHAPES--------------------------------------------------------------*/
-
 
 .shape {
     position: absolute;
     opacity: 0.15;
 }
-
-header {
-    position: relative;
-    padding: 20px 0;
-    text-align: center;
-    border-radius: 30px;
-    background-color: rgba(255, 255, 255, 0.5);
-    box-shadow: 0 8px 20px rgba(0,0,0,0.3);
-    overflow: hidden;
-}
-
 
 .shape.circle {
     width: 90px;
@@ -235,9 +173,8 @@ header {
     border-radius: 50%;
     background-color: #66b2ff;
     top: 20px;
-    right: 20px; 
+    right: 20px;
 }
-
 
 .shape.triangle {
     width: 0;
@@ -246,10 +183,9 @@ header {
     border-right: 40px solid transparent;
     border-bottom: 60px solid purple;
     top: 15px;
-    right: 290px; 
+    right: 290px;
     transform: rotate(-10deg);
 }
-
 
 .shape.square {
     width: 70px;
@@ -260,10 +196,9 @@ header {
     transform: rotate(15deg);
 }
 
-
 .shape.diamond {
-    width: 40px;       
-    height: 80px;      
+    width: 40px;
+    height: 80px;
     background-color: red;
     clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
     top: 30px;
@@ -320,4 +255,89 @@ header {
     );
     top: 90px;
     right: 550px;
+}
+
+.page-section {
+    max-width: 1100px;
+    margin: 60px auto;
+    padding: 25px;
+    border: 4px outset #66b2ff;
+    border-radius: 25px;
+    background-color: rgba(255,255,255,0.7);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+    display: grid;
+    grid-template-columns: minmax(0, 1.4fr) minmax(0, 1fr) minmax(0, 1fr);
+    gap: 20px;
+    align-items: start;
+}
+
+.page-section p {
+    grid-column: 1 / 2;
+    font-size: 1.05rem;
+}
+
+.image-1 {
+    grid-column: 2 / 3;
+}
+
+.image-2 {
+    grid-column: 3 / 4;
+}
+
+.page-section img {
+    width: 100%;
+    height: auto;
+    border-radius: 25px;
+    border: 3px solid #66b2ff;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+}
+
+@media (max-width: 900px) {
+    main {
+        padding: 0 10px 30px 10px;
+    }
+
+    h1 {
+        margin-left: 0;
+        text-align: center;
+    }
+
+    #introduction,
+    #hobbies,
+    #sports,
+    #future {
+        width: 90%;
+        margin: 20px auto 0 auto;
+    }
+
+    .intro-img {
+        position: static;
+        display: block;
+        width: 70%;
+        max-width: 320px;
+        margin: 30px auto 0 auto;
+    }
+
+    .page-section {
+        grid-template-columns: 1fr;
+        max-width: 90%;
+    }
+
+    .page-section p,
+    .image-1,
+    .image-2 {
+        grid-column: 1 / 2;
+    }
+}
+
+@media (max-width: 500px) {
+    .page-menu {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    h1, .titles, h2 {
+        font-size: 1.2rem;
+        padding: 12px;
+    }
 }
